@@ -127,7 +127,7 @@ local function abrirTasks()
     -- Correção principal: Agora verifica se está VISÍVEL
     if window and window:isVisible() then return true end 
     
-    local task = root:recursiveGetChildById("widget525")
+    local task = root:recursiveGetChildById("widget511")
     if task then
         info("Abrindo Tasks")
         task.onClick(task)
