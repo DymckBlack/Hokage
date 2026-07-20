@@ -28,7 +28,7 @@ local function clickWindowChild(window, childId)
   return false
 end
 
-macro(500, "Auto Hand Seals (Loop)", function()
+macro(500, "Auto Hand Seals", function()
   -- Se ainda estiver no cooldown dos 60 segundos, aguarda
   if os.time() < nextBuffTime then
     return
