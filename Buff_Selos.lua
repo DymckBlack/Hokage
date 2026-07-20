@@ -1,7 +1,7 @@
 ------------------------- [[ CONFIGURAÇÃO ]] -----------------------
 
 local CONFIG = {
-  SEQUENCE = {"sealBtn4", "sealBtn6", "sealBtn8", "sealBtn10", "sealBtn12"},
+  SEQUENCE = {"sealBtn1", "sealBtn5", "sealBtn9", "sealBtn2", "sealBtn6"},
   CLICK_DELAY = 250,      -- Tempo entre cada selo (ms)
   ACTION_DELAY = 500,     -- Tempo para resetar e ativar (ms)
   BUFF_COOLDOWN = 60      -- Tempo de espera entre cada renovação (segundos)
@@ -54,7 +54,7 @@ macro(500, "Auto Hand Seals", function()
   clickWindowChild(sealsWindow, "resetButton")
   delay(CONFIG.ACTION_DELAY)
 
-  -- 3. Aperta a sequência de selos (4 -> 6 -> 8 -> 10 -> 12)
+  -- 3. Aperta a sequência de selos (1 -> 5 -> 9 -> 2 -> 6)
   for _, btnId in ipairs(CONFIG.SEQUENCE) do
     clickWindowChild(sealsWindow, btnId)
     delay(CONFIG.CLICK_DELAY)
