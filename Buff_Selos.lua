@@ -1,7 +1,7 @@
 ------------------------- [[ CONFIGURAÇÃO ]] -----------------------
 
 local CONFIG = {
-  SEQUENCE = {"sealBtn1", "sealBtn5", "sealBtn9", "sealBtn2", "sealBtn6"},
+  SEQUENCE = {"sealBtn6", "sealBtn12", "sealBtn7", "sealBtn1", "sealBtn8"},
   CLICK_DELAY = 250,      -- Tempo entre cada selo (ms)
   ACTION_DELAY = 500,     -- Tempo para resetar e ativar (ms)
   BUFF_COOLDOWN = 60      -- Tempo de espera entre cada renovação (segundos)
